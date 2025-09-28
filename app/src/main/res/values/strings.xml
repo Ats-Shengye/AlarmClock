@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">アラームクロック</string>
+    <string name="main_clock">時計</string>
+    <string name="settings">設定</string>
+    <string name="add_new_alarm">＋新しいアラームを設定</string>
+    <string name="delete_alarm">削除</string>
+    <string name="save">保存</string>
+    <string name="cancel">キャンセル</string>
+    <string name="set_time">時刻設定</string>
+    <string name="navigation_drawer_open">ナビゲーションドロワーを開く</string>
+    <string name="navigation_drawer_close">ナビゲーションドロワーを閉じる</string>
+    <string name="next_alarm">次のアラーム</string>
+    <string name="next_alarm_in">あと %1$d時間%2$d分</string>
+    <string name="change_alarm_sound">アラーム音を変更</string>
+    <string name="disable_alarm">無効化</string>
+    <string name="enable_alarm">有効化</string>
+    <string name="set_repeat_days">曜日を設定</string>
+    <string name="alarm_settings">アラーム設定</string>
+    <string name="sun">日</string>
+    <string name="mon">月</string>
+    <string name="tue">火</string>
+    <string name="wed">水</string>
+    <string name="thu">木</string>
+    <string name="fri">金</string>
+    <string name="sat">土</string>
+    <string name="pick_background_image">背景画像を選択</string>
+    <string name="background_opacity">背景の透明度</string>
+    <string name="skip_holidays_beta">祝日は鳴らさない（β・週末のみ）</string>
+</resources>

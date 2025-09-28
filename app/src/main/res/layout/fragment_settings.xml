@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".fragments.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- アラーム一覧 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_alarms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="16dp"
+            android:background="@color/black" />
+
+        <!-- 新しいアラーム追加ボタン -->
+        <Button
+            android:id="@+id/btn_add_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_add_alarm"
+            android:text="@string/add_new_alarm"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:padding="20dp"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <!-- 背景設定ブロック -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/btn_pick_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/pick_background_image"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/background_opacity"
+            android:textColor="@color/white" />
+
+        <SeekBar
+            android:id="@+id/seek_opacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_skip_holidays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/skip_holidays_beta"
+            android:textColor="@color/white" />
+
+        <!-- 祝日設定セクション -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="祝日データ"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_holiday_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="最終更新: なし"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_update_holidays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="祝日データを更新"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <TextView
+            android:id="@+id/tv_upcoming_holidays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>

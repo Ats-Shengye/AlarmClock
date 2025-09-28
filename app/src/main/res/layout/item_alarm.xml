@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <!-- アラーム項目の行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:minHeight="72dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@color/gray_dark">
+
+        <!-- アラーム時刻表示 -->
+        <TextView
+            android:id="@+id/tv_alarm_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="08:00"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:visibility="visible" />
+
+        <!-- 削除ボタン -->
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="−"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            style="?android:attr/borderlessButtonStyle" />
+
+    </LinearLayout>
+
+    <!-- 区切り線 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/dashed_line" />
+
+</LinearLayout>

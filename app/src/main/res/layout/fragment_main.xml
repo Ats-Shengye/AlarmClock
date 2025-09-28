@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="20dp"
+    tools:context=".fragments.MainFragment">
+
+    <!-- 背景画像 -->
+    <ImageView
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="1.0"
+        android:contentDescription=""
+        android:adjustViewBounds="false" />
+
+    <!-- 中央のメイン時計表示エリア -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- 日付表示 -->
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="2025/08/12(火)"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:fontFamily="sans-serif-light" />
+
+        <!-- 時刻表示 -->
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19:09"
+            android:textColor="@color/white"
+            android:textSize="128sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- 右下の次のアラーム表示 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- タイマーアイコン -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⏰"
+            android:textSize="32sp"
+            android:layout_marginRight="10dp" />
+
+        <!-- 次のアラーム時刻 -->
+        <TextView
+            android:id="@+id/tv_next_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:00"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:fontFamily="sans-serif-light" />
+
+    </LinearLayout>
+
+    <!-- 次のアラームまでの残り時間 -->
+    <TextView
+        android:id="@+id/tv_next_alarm_eta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/tv_next_alarm"
+        android:layout_margin="40dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light" />
+
+</RelativeLayout>
